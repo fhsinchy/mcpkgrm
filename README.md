@@ -18,7 +18,7 @@ What I did is I made a simple python program that utilizes `pkgutil` to figure o
 Clone this repo anywhere you want. CD into the repo folder and execute -
 
 ```shell
-sudo python3 mcpkgrem.py
+sudo python3 mcpkgrm.py
 ```
 
 You need to type AGREE here for no reason -
