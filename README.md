@@ -37,7 +37,7 @@ Wait until the process is finished -
 
 ![Be Patient](./_screens/four.png)
 
-Once the success message is being shown you're free to go.
+Once the success message is being shown check your Applications folder for any leftover and remove manually. macOS often prevents the script from deleting files from that directory. All other files should have been taken care of :relaxed:
 
 ## Future
 
