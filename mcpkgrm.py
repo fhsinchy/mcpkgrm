@@ -8,12 +8,12 @@ if not os.geteuid() == 0:
 
 # printing the warning message and getting the user to agree.
 print(f'''
-    {Color.RED}{Color.BOLD}
-    I CAN NOT GUARANTEE YOUR SYSTEM'S INTEGRITY. 
-    REMOVING THE WRONG PACAKGE OR ANY OF THE SYSTEM PACKAGES, 
-    MAY CAUSE SYSTEM FAILURE. 
-    PLEASE BE CAREFUL WHILE USING mcpkgrm.
-    {Color.END}
+{Color.RED}{Color.BOLD}
+I CAN NOT GUARANTEE YOUR SYSTEM'S INTEGRITY. 
+REMOVING THE WRONG PACAKGE OR ANY OF THE SYSTEM PACKAGES, 
+MAY CAUSE SYSTEM FAILURE. 
+PLEASE BE CAREFUL WHILE USING mcpkgrm.
+{Color.END}
 ''')
 agreement = input(f'WRITE {Color.BOLD}{Color.UNDERLINE}AGREE{Color.END} TO CONTINUE: ')
 if agreement.lower() != 'agree':
@@ -69,7 +69,11 @@ while True:
     if confirmed.lower() == 'yes':
         os.system('clear')
         selected_pkg.rem_pkg() # calling the methods for package removal.
-        exit(f'{Color.BOLD}{Color.GREEN}{selected_pkg}{Color.END} UNINSTALLED SUCCESSFULLY!')
+        exit(f'''
+        {Color.BOLD}{Color.GREEN}{selected_pkg}{Color.END} UNINSTALLED SUCCESSFULLY!
+        PLEASE CHECK YOUR {Color.BOLD}{Color.GREEN}Applications{Color.END} DIRECTORY FOR ANY LEFTOVER,
+        AND REMOVE MANUALLY.
+        ''')
     elif confirmed.lower() == 'no':
         os.system('clear')
     else:
