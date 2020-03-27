@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from helpers import list_to_dict, run_shell_command
+from .helpers import list_to_dict, run_shell_command
 
 class Package:
     """
