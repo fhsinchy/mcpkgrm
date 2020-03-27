@@ -13,12 +13,27 @@ What I did is I made a simple python program that utilizes `pkgutil` to figure o
 * macOS
 * Python 3
 
-## Usage
-
-Clone this repo anywhere you want. CD into the repo folder and execute -
+## Installation
 
 ```shell
-sudo python3 mcpkgrm.py
+git clone https://github.com/fhsinchy/mcpkgrm.git ~/mcpkgrm
+cd ~/mcpkgrm
+pip install .
+pip freeze
+```
+
+Output &ndash;
+
+```shell
+mcpkgrm==1.0.0
+```
+
+## Usage
+
+Once installed, the program should be everywhere in your system.
+
+```shell
+sudo python -m mcpkgrm.py
 ```
 
 You need to type AGREE here for no reason -
@@ -37,7 +52,7 @@ Wait until the process is finished -
 
 ![Be Patient](./_screens/four.png)
 
-Once the success message is being shown check your Applications folder for any leftover and remove manually. macOS often prevents the script from deleting files from that directory. All other files should have been taken care of :relaxed:
+Once the success message is being shown check your Applications folder for any leftover and remove manually. macOS often prevents the program from deleting files from that directory. All other files should have been taken care of :relaxed:
 
 ## Future
 

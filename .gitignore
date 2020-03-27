@@ -104,6 +104,9 @@ celerybeat-schedule
 .dmypy.json
 dmypy.json
 
+# virtual environment
+env
+
 # Pyre type checker
 .pyre/
 
