@@ -33,7 +33,7 @@ mcpkgrm==1.0.0
 Once installed, the program should be everywhere in your system.
 
 ```shell
-sudo python -m mcpkgrm.py
+sudo python3 -m mcpkgrm
 ```
 
 You need to type AGREE here for no reason -
