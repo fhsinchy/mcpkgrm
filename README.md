@@ -2,11 +2,11 @@
 
 In macOS you either copy the application directly into your `Applications` folder or you use a package(.pkg) to install the application using a wizard. Applications installed from a package (.pkg) often install various files outside of the `Applications` folder and that's why removing an application installed from a package(.pkg) is not that straight forward.
 
-macOS itself doesn't provide any method for unsinstalling such applications. All it provides is a shell program called `pkgutil` that can be used to view certain information of installed packages but can not be used to uninstall any.
+macOS itself doesn't provide any method for uninstalling such applications. All it provides is a shell program called `pkgutil` that can be used to view certain information of installed packages but can not be used to uninstall any.
 
 Some applications come with their very own uninstaller but most of the applications don't. There are paid applications out there to do just this.
 
-What I did is I made a simple python program that utilizes `pkgutil` to figure out what files were installed via a package(.pkg), removes them and also cleans the package(.pkg) reciept from the system.
+What I did is I made a simple python program that utilizes `pkgutil` to figure out what files were installed via a package(.pkg), removes them and also cleans the package(.pkg) receipt from the system.
 
 ## Requirements
 
