@@ -4,7 +4,7 @@ from .helpers import list_to_dict, run_shell_command
 
 class Package:
     """
-        Represents a single macOS package (.pkg). Contains necessary informations such as package-id, package version,
+        Represents a single macOS package (.pkg). Contains necessary information such as package-id, package version,
         volume the package is installed on and the full location.
     """
     def __init__(self, package_id: str, version: str, volume: str, location: str):
