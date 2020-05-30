@@ -16,9 +16,7 @@ What I did is I made a simple python program that utilizes `pkgutil` to figure o
 ## Installation
 
 ```shell
-git clone https://github.com/fhsinchy/mcpkgrm.git ~/mcpkgrm
-cd ~/mcpkgrm
-pip install .
+pip install git+https://github.com/fhsinchy/mcpkgrm.git#egg=mcpkgrm
 pip freeze
 ```
 
